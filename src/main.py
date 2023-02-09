@@ -42,5 +42,4 @@ async def respond(query):
     for request, response in request_and_response.items():
         if request in query:
             return response
-        else:
-            return f"{username}, your query didn't match with my database. Try something else."
+    return f"{username}, your query didn't match with my database. Try something else."
